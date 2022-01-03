@@ -16,7 +16,7 @@ El reto fue resuelto con html y css básico
 
 ### Links
 
-- URL del Sitio: [Sitio Web](#)
+- URL del Sitio: [Sitio Web](https://danilovaron.github.io/Stats-preview-card/)
 
 ## Proceso
 
