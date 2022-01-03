@@ -1,0 +1,40 @@
+:root {
+  /* Primario */
+
+  --Azul_muy_oscuro: hsl(233, 47%, 7%);
+  --Azul_oscuro_desaturado: hsl(244, 38%, 16%);
+  --Violeta_suave: hsl(277, 64%, 61%);
+
+  /* Neutral */
+
+  --Blanco: hsl(0, 0%, 100%);
+  --Blanco_transparente_oscuro: hsla(0, 0%, 100%, 0, 75);
+  --Blanco_transparente_suave: hsla(0, 0%, 100%, 0.6);
+}
+
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  font-size: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  /* font-family: "Lexend Deca", sans-serif;
+  font-family: "Inter", sans-serif; */
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
