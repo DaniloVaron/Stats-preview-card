@@ -8,8 +8,8 @@
   /* Neutral */
 
   --Blanco: hsl(0, 0%, 100%);
-  --Blanco_transparente_oscuro: hsla(0, 0%, 100%, 0, 75);
-  --Blanco_transparente_suave: hsla(0, 0%, 100%, 0.6);
+  --Blanco_transparente_sueva: hsla(0, 0%, 100%, 0.75);
+  --Blanco_transparente_oscuro: hsla(0, 0%, 100%, 0.6);
 }
 
 html {
@@ -27,10 +27,146 @@ body {
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  /* font-family: "Lexend Deca", sans-serif;
-  font-family: "Inter", sans-serif; */
+  color: var(--Blanco);
+  background: var(--Azul_muy_oscuro);
+  font-family: "Inter", sans-serif;
 }
 
+/* Contenedor */
+.container {
+  margin: 1em auto;
+  width: 90%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+/* Carta */
+.card {
+  background: var(--Azul_oscuro_desaturado);
+  overflow: hidden;
+  border-radius: 0.6em;
+  max-width: 340px;
+  margin-bottom: 10px;
+}
+
+@media (min-width: 768px) {
+  .card {
+    display: flex;
+    flex-direction: row-reverse;
+    max-width: 900px;
+  }
+}
+
+/* Fondo de la Imagen */
+.fondo_imagen {
+  background: var(--Violeta_suave);
+  height: 300px;
+}
+
+/* Imagen */
+.imagen {
+  mix-blend-mode: multiply;
+  width: 100%;
+  height: 100%;
+}
+
+/* Información */
+.info {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .fondo_imagen {
+    height: auto;
+    flex: 1;
+  }
+
+  .info {
+    text-align: start;
+    flex: 1;
+  }
+}
+
+/* Titulo y Texto principal */
+.enunciado {
+  padding: 20px 30px;
+}
+
+@media (min-width: 768px) {
+  .enunciado {
+    padding: 60px;
+  }
+}
+
+/* Titulo principal */
+.titulo {
+  font-weight: 700;
+}
+
+/* color de la palabra del titulo */
+.color_titulo {
+  color: var(--Violeta_suave);
+}
+
+/* Texto principal */
+.texto {
+  font-family: "Lexend Deca", sans-serif;
+  color: var(--Blanco_transparente_oscuro);
+  line-height: 1.6;
+  margin-bottom: 0;
+}
+
+@media (min-width: 768px) {
+  .titulo {
+    margin: 0;
+  }
+
+  .texto {
+    font-size: 0.9em;
+  }
+}
+
+/* Datos */
+.datos {
+  padding: 20px 30px;
+}
+
+@media (min-width: 768px) {
+  .datos {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 60px;
+  }
+}
+
+/* Titulos de los datos */
+.dato_cantidad {
+  margin-bottom: 10px;
+  margin-top: 0;
+  font-weight: 700;
+}
+
+/* Textos de los datos */
+.dato-referencia {
+  margin-top: 0;
+  margin-bottom: 30px;
+  font-family: "Lexend Deca", sans-serif;
+  font-size: 0.8em;
+  color: var(--Blanco_transparente_oscuro);
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+}
+
+@media (min-width: 768px) {
+  .dato-referencia {
+    font-size: 0.7em;
+  }
+}
+
+/* Otro */
 .attribution {
   font-size: 11px;
   text-align: center;

@@ -28,33 +28,73 @@
 
 <body>
 
+  <!-- Contenedor -->
   <main class="container">
+
+    <!-- Carta -->
     <section class="card">
-      <div>
-        <img src="./images/image-header-desktop.jpg" alt="Reunion">
+
+      <!-- Imagen -->
+      <div class="fondo_imagen">
+        <picture>
+          <source srcset="images/image-header-mobile.jpg" type="image/jpg" media="(max-width: 767px)" />
+          <source srcset="images/image-header-desktop.jpg" type="image/jpg" media="(min-width: 768px)" />
+          <img src="./images/image-header-mobile.jpg" alt="reunion" class="imagen">
+        </picture>
       </div>
 
-      <div>
-        <div>
-          <h1>Get <span>insights</span> that help your business grow.</h1>
+      <!-- Información -->
+      <div class="info">
 
-          <p>
+        <!-- Titulo y texto -->
+        <div class="enunciado">
+
+          <!-- Titulo -->
+          <h1 class="titulo">Get <span class="color_titulo">insights</span> that help your business grow.</h1>
+
+          <!-- Texto -->
+          <p class="texto">
             Discover the benefits of data analytics and make better decisions regarding revenue, customer
             experience, and overall efficiency.
           </p>
         </div>
 
-        <ul>
-          <li>10k+ companies</li>
-          <li>314 templates</li>
-          <li>12m+ queries</li>
-        </ul>
+        <!-- Datos -->
+        <div class="datos">
+
+          <!-- Primer Dato -->
+          <div>
+
+            <!-- Cantidad -->
+            <h2 class="dato_cantidad">10k+</h2>
+            <!-- Referencia -->
+            <p class="dato-referencia">companies</p>
+          </div>
+
+          <!-- Segundo Dato -->
+          <div>
+
+            <!-- Cantidad -->
+            <h2 class="dato_cantidad">314</h2>
+            <!-- Referencia -->
+            <p class="dato-referencia">templates</p>
+          </div>
+
+          <!-- Tercer Dato -->
+          <div>
+
+            <!-- Cantidad -->
+            <h2 class="dato_cantidad">12m+</h2>
+            <!-- Referencia -->
+            <p class="dato-referencia">queries</p>
+          </div>
+        </div>
       </div>
     </section>
 
     <div class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-      Coded by <a href="#">Your Name Here</a>.
+      Desafío por <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+      Codificado por <a href="https://github.com/DaniloVaron" target="_blank">Danilo Varon</a>.
     </div>
   </main>
 </body>
